@@ -1,11 +1,8 @@
 # Pushok
 
 [![PHP >= 7.2](https://img.shields.io/badge/php-%3E%3D%207.2-8892BF.svg?style=flat-square)](https://php.net/)
-[![Build Status][ico-travis]][link-travis]
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Coverage Status](https://coveralls.io/repos/github/edamov/pushok/badge.svg?branch=master)](https://coveralls.io/github/edamov/pushok?branch=master)
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Software License][ico-license]](LICENSE.md)
 
 Pushok is a simple PHP library for sending push notifications to APNs. 
@@ -128,8 +125,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-author]: https://github.com/edamov
 [link-author2]: https://github.com/exeerik
 [link-contributors]: ../../contributors
-[link-packagist]: https://packagist.org/packages/edamov/pushok
-[link-travis]: https://travis-ci.org/edamov/pushok
-[link-scrutinizer]: https://scrutinizer-ci.com/g/edamov/pushok/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/edamov/pushok
-[link-downloads]: https://packagist.org/packages/edamov/pushok
+[link-packagist]: https://packagist.org/packages/exeerik/pushok
+[link-downloads]: https://packagist.org/packages/exeerik/pushok
