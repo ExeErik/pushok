@@ -43,7 +43,7 @@ class Sound implements \JsonSerializable
      *
      * @var int
      */
-    private $criticalCritical;
+    private $criticalEnabled;
 
     protected function __construct()
     {
@@ -101,26 +101,26 @@ class Sound implements \JsonSerializable
     }
 
     /**
-     * Set critical status.
+     * Set critical alert sound enabled.
      *
      * @param int $value
      * @return Sound
      */
-    public function setCriticalSoundCritical(int $value)
+    public function setCriticalSoundEnabled(int $value)
     {
-        $this->criticalCritical = $value;
+        $this->criticalEnabled= $value;
 
         return $this;
     }
 
     /**
-     * Get critical alert status.
+     * Get critical alert sound status.
      *
      * @return int
      */
-    public function getCriticalSoundCritical()
+    public function getCriticalSoundEnabled()
     {
-        return $this->criticalCritical;
+        return $this->criticalEnabled;
     }
 
     /**
@@ -151,8 +151,8 @@ class Sound implements \JsonSerializable
             $sound[self::ALERT_CRITICAL_VOLUME] = $this->criticalVolume;
         }
 
-        if (is_int($this->criticalCritical)) {
-            $sound[self::ALERT_CRITICAL_CRITICAL] = $this->criticalCritical;
+        if (is_int($this->criticalEnabled)) {
+            $sound[self::ALERT_CRITICAL_CRITICAL] = $this->criticalEnabled;
         }
 
         return $sound;

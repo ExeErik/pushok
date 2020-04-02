@@ -47,6 +47,7 @@ use Pushok\Client;
 use Pushok\Notification;
 use Pushok\Payload;
 use Pushok\Payload\Alert;
+use Pushok\Payload\Sound;
 
 $options = [
     'key_id' => 'AAAABBBBCC', // The Key ID obtained from Apple developer account
@@ -65,6 +66,13 @@ $payload = Payload::create()->setAlert($alert);
 
 //set notification sound to default
 $payload->setSound('default');
+
+//if you want to send a critical alert you need to specify the following settings
+//and remove previous set "$payload->setSound('default');"
+$sound = Sound::create()->setCriticalSoundEnabled(1);
+$sound = $sound->setCriticalSoundName('default');
+$sound = $sound->setCriticalSoundVolume(1.0);
+$payload->setSound($sound); 
 
 //add custom value to your notification, needs to be customized
 $payload->setCustomValue('key', 'value');
