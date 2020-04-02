@@ -62,6 +62,7 @@ class Request
     public function __construct(Notification $notification, $isProductionEnv)
     {
         $this->uri = $isProductionEnv ? $this->getProductionUrl($notification) : $this->getSandboxUrl($notification);
+        print_r($notification->getPayload()->toJson());
         $this->body = $notification->getPayload()->toJson();
 
         if (!defined('CURL_HTTP_VERSION_2')) {
