@@ -18,15 +18,13 @@ Pushok is a simple PHP library for sending push notifications to APNs.
 - [X] Supports new iOS 10 features such as Collapse IDs, Subtitles and Mutable Notifications
 - [X] Uses concurrent requests to APNs
 - [X] Tested and working in APNs production environment
+- [X] Critical alerts functionality
 
 ## Requirements
 
 * PHP >= 7.2
 * lib-curl >= 7.46.0 (with http/2 support enabled)
 * lib-openssl >= 1.0.2e 
-
-Docker image that meets requirements can be found [here](https://hub.docker.com/r/edamov/pushok-docker).
-Or you can follow [this tutorial](https://nathanleclaire.com/blog/2016/08/11/curl-with-http2-support---a-minimal-alpine-based-docker-image/) to create your own docker image with curl with HTTP/2 support.
 
 ## Install
 
@@ -108,11 +106,12 @@ $ composer test
 
 ## Security
 
-If you discover any security related issues, please email edamov@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email erik@exeerik.de instead of using the issue tracker.
 
 ## Credits
 
 - [Arthur Edamov][link-author]
+- [Erik Exner][link-author2]
 - [All Contributors][link-contributors]
 
 ## License
@@ -126,10 +125,11 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/edamov/pushok.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/edamov/pushok.svg?style=flat-square
 
+[link-author]: https://github.com/edamov
+[link-author2]: https://github.com/exeerik
+[link-contributors]: ../../contributors
 [link-packagist]: https://packagist.org/packages/edamov/pushok
 [link-travis]: https://travis-ci.org/edamov/pushok
 [link-scrutinizer]: https://scrutinizer-ci.com/g/edamov/pushok/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/edamov/pushok
 [link-downloads]: https://packagist.org/packages/edamov/pushok
-[link-author]: https://github.com/pushok
-[link-contributors]: ../../contributors
